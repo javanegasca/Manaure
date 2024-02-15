@@ -1,0 +1,76 @@
+.titulositios{
+    text-align: center;
+    color: rgb(0, 94, 13);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* O cualquier ancho máximo que desees */
+    margin: 0 auto; /* Para centrar el contenido */
+}
+
+.image-container {
+    display: flex; /* Utiliza flexbox para alinear las imágenes */
+    justify-content: center; /* Centra los elementos dentro del contenedor flexbox */
+}
+
+.image-container img {
+    max-width: 30%; /* Establece el ancho máximo de las imágenes */
+    margin: 10px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* O cualquier ancho máximo que desees */
+    margin: 0 auto; /* Para centrar el contenido */
+}
+
+.image-container {
+    display: flex; /* Utiliza flexbox para alinear las imágenes */
+    justify-content: center; /* Centra los elementos dentro del contenedor flexbox */
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px; /* Establece la perspectiva para 3D */
+    margin: 10px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
