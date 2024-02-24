@@ -87,3 +87,76 @@ body
     margin-right: 50px;
     padding-top: 10px;
 }
+.video
+{
+    display: flex;
+    justify-content: center;
+}
+.cards
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap-reverse;
+
+}
+.especificaciones
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicio1
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.servicio1 img
+{
+    width: 40px;
+}
+.nombre
+{
+    padding-top: 15px;
+    margin-left: 5px;
+}
+.calificacion
+{
+    display: block;
+    flex-wrap: wrap;
+}
+.calificacion img
+{
+    width: 20px;
+}
+#chicle:hover
+{
+    animation: 1s chicle 1;
+}
+@keyframes chicle 
+{
+    30%
+    {
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    50%
+    {
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+    60%
+    {
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+    
+}
+.precio
+{
+    margin-top: 30px;
+    font-family: "Protest Riot", sans-serif;
+   
+}
+.precio h5
+{
+    font-size:25px;
+    color: #8ac7e4;
+}
+
