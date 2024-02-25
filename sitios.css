@@ -3,41 +3,22 @@
     color: rgb(0, 94, 13);
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.container {
-    width: 100%;
-    max-width: 1200px; /* O cualquier ancho máximo que desees */
-    margin: 0 auto; /* Para centrar el contenido */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-top: 20px; 
 }
 
+
+/* Tarjetas del inicio*/
 .image-container {
-    display: flex; /* Utiliza flexbox para alinear las imágenes */
-    justify-content: center; /* Centra los elementos dentro del contenedor flexbox */
+    display: flex;
+    justify-content: flex-start; /* Alinea las flip cards al lado izquierdo */
 }
-
-.image-container img {
-    max-width: 30%; /* Establece el ancho máximo de las imágenes */
-    margin: 10px;
-}
-.container {
-    width: 100%;
-    max-width: 1200px; /* O cualquier ancho máximo que desees */
-    margin: 0 auto; /* Para centrar el contenido */
-}
-
-.image-container {
-    display: flex; /* Utiliza flexbox para alinear las imágenes */
-    justify-content: center; /* Centra los elementos dentro del contenedor flexbox */
-}
-
 .flip-card {
-    background-color: transparent;
-    width: 200px;
-    height: 200px;
+    width: 200px; /* Ancho fijo para todas las tarjetas */
+    height: 300px;
+    margin-right: 20px; /* Espacio entre las flip cards */
     perspective: 1000px; /* Establece la perspectiva para 3D */
-    margin: 10px;
 }
-
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -46,31 +27,31 @@
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
-
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
-
 .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
+    width: 100%; /* Ajusta el tamaño de las caras de la tarjeta */
     height: 100%;
     backface-visibility: hidden;
 }
-
 .flip-card-front {
     background-color: #bbb;
 }
-
 .flip-card-back {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .flip-card img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%; /* Asegura que todas las imágenes tengan el mismo tamaño */
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
 }
-
-
+.mt-custom {
+    margin-top: 6rem; /* Puedes ajustar este valor según tus necesidades */
+}
