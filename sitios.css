@@ -1,12 +1,27 @@
-.titulositios{
-    text-align: center;
-    color: rgb(0, 94, 13);
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    margin-top: 20px; 
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100%;
+  }
+
+/*Imagen del inicio*/
+.cabezote {
+  position: relative;
+  width: 100%; 
+  max-width: 100%;
+  overflow: hidden;
 }
 
+.cabezote img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Tarjetas del inicio*/
 .image-container {
@@ -55,3 +70,101 @@
 .mt-custom {
     margin-top: 6rem; /* Puedes ajustar este valor según tus necesidades */
 }
+
+/*Swiper*/
+#contenedor {
+  position: relative;
+  height: 100%;
+}
+
+#contenedor {
+  background: #060606;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ .contenedor {
+  background: #000;
+  color: #000;
+}
+
+swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper2 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper2 swiper-slide {
+  width: 25%;
+  height: 100%;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Museo*/
+.bg-imagen {
+  background-image: url('/img/back.jpeg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta correcta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.col-md-12 {
+  /* Asegúrate de que los estilos de tu framework de diseño (como Bootstrap) estén configurados para ocupar el 100% del ancho */
+  width: 100%;
+}
+
+h1{
+  font-family:'Protest Riot';
+}
+
