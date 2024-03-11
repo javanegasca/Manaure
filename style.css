@@ -1,0 +1,199 @@
+body
+{
+    background-image: url(img/background.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    
+}
+.geografia
+{
+   
+    padding: 70px;
+    display: flex;
+    display: inline-block;
+   
+}
+.texto
+{
+    display: flex;
+    margin-left: 70px;
+    width: 90%;
+    font-size: 18px;
+    justify-content: center;
+    background-color: rgba(255, 228, 196, 0.461);
+}
+.titulo
+{
+    
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+      
+}
+.mapa
+{
+    display: flex;
+    margin-left: 70px;
+    width: 90%;
+    font-size: 18px;
+    justify-content: center;
+}
+.contenido
+{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.texto1
+{
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+    padding-top: 10px;
+        
+}
+.escudo
+{
+    width: 40%;
+    display: flex;
+    margin-left: 50px;
+}
+.bandera
+{
+   
+    padding: 70px;
+    display: flex;
+    display: inline-block;
+    background-color: #8ac7e4;   
+}
+.escudo img 
+{
+    width: 50%;
+    
+}
+.audio
+{
+    display: flex;
+    margin-left: 110px;
+}
+.titulo1
+{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 20px;
+    font-style: normal; 
+    margin-right: 50px;
+    padding-top: 10px;
+}
+.video
+{
+    display: flex;
+    justify-content: center;
+}
+.cards
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap-reverse;
+
+}
+.especificaciones
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicio1
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.servicio1 img
+{
+    width: 40px;
+}
+.nombre
+{
+    padding-top: 15px;
+    margin-left: 5px;
+}
+.calificacion
+{
+    display: block;
+    flex-wrap: wrap;
+}
+.calificacion img
+{
+    width: 20px;
+}
+#chicle:hover
+{
+    animation: 1s chicle 1;
+}
+@keyframes chicle 
+{
+    30%
+    {
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    50%
+    {
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+    60%
+    {
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+    
+}
+.precio
+{
+    margin-top: 30px;
+    font-family: "Protest Riot", sans-serif;
+   
+}
+.precio h5
+{
+    font-size:25px;
+    color: #8ac7e4;
+}
+.galeria
+{
+    margin-left: 150px;
+}
+.galeria img
+{
+    width: 400px;
+    
+}
+.galeria img:hover {
+    transform: scale(1.2);
+}
+.culturap
+{ 
+    max-width: 50%;
+    padding: 30px;
+    font-size: 20px;
+}
+.culturaf
+{
+    max-width: 45%;
+    width: 50%;
+    height: 600px;
+    background-image: url("img/wayuu.jpg");    
+    background-size: cover; 
+    transition: background-image 0.3s ease; 
+    border-radius: 20px;
+    
+}
+
+.culturaf:hover
+{
+    background-image: url('img/wayuu_2.jpg')
+}
+.carrusel
+{
+    width: 50%;
+}
