@@ -159,4 +159,41 @@ body
     font-size:25px;
     color: #8ac7e4;
 }
+.galeria
+{
+    margin-left: 150px;
+}
+.galeria img
+{
+    width: 400px;
+    
+}
+.galeria img:hover {
+    transform: scale(1.2);
+}
+.culturap
+{ 
+    max-width: 50%;
+    padding: 30px;
+    font-size: 20px;
+}
+.culturaf
+{
+    max-width: 45%;
+    width: 50%;
+    height: 600px;
+    background-image: url("img/wayuu.jpg");    
+    background-size: cover; 
+    transition: background-image 0.3s ease; 
+    border-radius: 20px;
+    
+}
 
+.culturaf:hover
+{
+    background-image: url('img/wayuu_2.jpg')
+}
+.carrusel
+{
+    width: 50%;
+}
