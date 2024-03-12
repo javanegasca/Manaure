@@ -109,7 +109,9 @@
                         <div class="rango">
                             <h5>Desde: $250.000 Cop</h5>
                         </div>
-                        <button type="button" class="btn btn btn-lg" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
+                        <button type="button"class="btn btn-primary abrirModal boton-comprar" data-bs-toggle="modal"
+                        data-bs-target="#modalEjemplo" data-contenido="contenido5" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
+                        
                       </div>
                       
                     </div>
@@ -176,7 +178,8 @@
                         <div class="rango">
                             <h5>Desde: $500.000 Cop</h5>
                         </div>
-                        <button type="button" class="btn btn btn-lg" style="background: linear-gradient(to left, #ffcc00, #ff6600)">Reservar</button>
+                        <button type="button"class="btn btn-primary abrirModal boton-comprar" data-bs-toggle="modal"
+                        data-bs-target="#modalEjemplo" data-contenido="contenido5" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
                       </div>
                       
                     </div>
@@ -241,7 +244,8 @@
                         <div class="rango">
                             <h5>Desde: $300.000 Cop</h5>
                         </div>
-                        <button type="button" class="btn btn btn-lg" style="background: linear-gradient(to left, #ffcc00, #ff6600)">Reservar</button>
+                        <button type="button"class="btn btn-primary abrirModal boton-comprar" data-bs-toggle="modal"
+                        data-bs-target="#modalEjemplo" data-contenido="contenido5" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
                       </div>
                       
                     </div>
@@ -298,7 +302,8 @@
                         <div class="rango">
                             <h5>Desde: $250.000 Cop</h5>
                         </div>
-                        <button type="button" class="btn btn btn-lg" style="background: linear-gradient(to left, #ffcc00, #ff6600)">Reservar</button>
+                        <button type="button"class="btn btn-primary abrirModal boton-comprar" data-bs-toggle="modal"
+                        data-bs-target="#modalEjemplo" data-contenido="contenido5" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
                       </div>
                       
                     </div>
@@ -350,7 +355,8 @@
                         <div class="rango">
                             <h5>Desde: $90.000 Cop</h5>
                         </div>
-                        <button type="button" class="btn btn btn-lg" style="background: linear-gradient(to left, #ffcc00, #ff6600)">Reservar</button>
+                        <button type="button"class="btn btn-primary abrirModal boton-comprar" data-bs-toggle="modal"
+                        data-bs-target="#modalEjemplo" data-contenido="contenido5" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
                       </div>
                       
                     </div>
@@ -408,7 +414,8 @@
                         <div class="rango">
                             <h5>Desde: $130.000 Cop</h5>
                         </div>
-                        <button type="button" class="btn btn btn-lg" style="background: linear-gradient(to left, #ffcc00, #ff6600)">Reservar</button>
+                        <button type="button"class="btn btn-primary abrirModal boton-comprar" data-bs-toggle="modal"
+                        data-bs-target="#modalEjemplo" data-contenido="contenido5" style="background: linear-gradient(to left, #ffcc00, #ff6600);">Reservar</button>
                       </div>
                       
                     </div>
@@ -417,6 +424,78 @@
               </div>
 
         </div>
+         <!-- Modal -->
+  <div class="modal fade" id="modalEjemplo" tabindex="-1" aria-labelledby="modalEjemploLabel" aria-hidden="true" style="background-image: url(img/back_nodal.png); background-size:contain; background-repeat: no-repeat; background-position: center; ">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="font-family: monospace; background-color: #fff6ef;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEjemploLabel">HOTELES-MANAURE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <!-- El contenido dinámico se cargará aquí -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: #c74b97;" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.abrirModal').forEach(button => {
+        button.addEventListener('click', (event) => {
+          // Obtiene el identificador del contenido a mostrar desde el atributo data-contenido del botón
+          const contenidoID = button.getAttribute('data-contenido');
+          
+
+
+          // Define el contenido dinámico con HTML más complejo
+          const contenidoDinamico = {
+            'contenido5': `
+            <div>
+            <h2>Reservas</h2>
+            <p>Ten en cuenta que nuestra Página es netamente informativa, por eso lo invitamos a contactarse diractamente con el hotel. (Precios sujetos a cambios)sin embargo, acá van una recomendaciones al momento de hacer la reserva</p>
+              <ul>
+              <li>Primero: asegúrate de verificar la disponibilidad de habitaciones para las fechas deseadas y seleccionar la opción que mejor se adapte a tus necesidades</li>
+              <li>Segundo: proporciona información precisa, como nombres de los huéspedes y detalles de contacto.</li>
+              <li>Tercero: Dependiendo de la política del hotel, es posible que se requiera un depósito o pago anticipado para confirmar la reserva.</li>
+              <li>Cuarto: te recomendamos revisar detenidamente las políticas de cancelación para evitar cargos adicionales en caso de cambios en tus planes. </li>
+              </ul>
+              <p>Estamos comprometidos a brindarte una experiencia excepcional</p>
+            </div>
+            `,
+           
+          };
+
+          // Verifica si el identificador existe en el contenido dinámico
+          if (contenidoDinamico.hasOwnProperty(contenidoID)) {
+            // Actualiza el contenido de la modal
+            document.querySelector('#modalEjemplo .modal-body').innerHTML = contenidoDinamico[contenidoID];
+          } else {
+            // Manejo de error o contenido no encontrado
+            document.querySelector('#modalEjemplo .modal-body').innerHTML = '<p>Contenido no disponible.</p>';
+          }
+        });
+      });
+    });
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var btnIrARestaurante = document.querySelector(".boton-cabecera");
+  
+  // Manejador de evento para hacer scroll al div con la clase "restaurante"
+  btnIrARestaurante.addEventListener("click", function() {
+      var restauranteDiv = document.querySelector(".tarjetasRestaurante");
+      
+      // Hacer scroll suavemente al div del restaurante
+      restauranteDiv.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+</script>
         
 
     </main>
